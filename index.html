@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        #Main_div{
+            width: 100%;
+        }
+        nav{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: rgb(9, 9, 103); 
+            position: sticky;
+            z-index: 5;
+            top: 0;
+            border-radius: 10px;
+        }
+        #logo{
+            width: 70%;
+            display: flex;
+            place-items: center;
+        }
+        #logo img{
+            width: 30%;
+            border-radius: 10px;
+            margin-left: 100px;
+        }
+        #span{
+            font-size: 20px;
+            display: none;
+        }
+        #link{
+            width: 100%;
+            margin: auto;
+            margin-left: 200px;
+        }
+        #link ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        #img{
+            width: 100%;
+        }
+        #img img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        #form_table{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        #form{
+            width: 49%;
+            /* border: 1px solid red; */
+            margin: auto;
+            /* text-align: center; */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(169, 189, 212);
+        }
+        #form input{
+            width: 99%;
+            height: 30px;
+            border-radius: 5px;
+            margin: 5px;
+            
+            
+        }
+        #form select{
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+        }
+        #form label{
+            font-weight: bolder;
+
+        }
+        button{
+            width: 15%;
+            height: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-left: 200px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+            font-weight: bolder;
+            padding: 30px;
+        }
+        #table_div{
+            width: 50%;
+            /* text-align: center; */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(190, 214, 214)
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            
+        
+        }
+        tr,td, th{
+           border: 1px solid black;
+           height: 40px;
+           text-align: center;
+           border-radius: 5px;
+        }
+        th{
+            background-color: rgb(151, 186, 226);
+        }
+        footer {
+            background-color: rgb(116, 116, 213);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-radius: 5px;
+    margin-top: 5px;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        footer h2{
+            color: white;
+        }
+        footer li{
+            margin-bottom: 20px;
+            color: black;
+            font-size: 25px;
+        }
+
+
+
+
+        @media screen and (min-width:300px) and (max-width:768px) {
+
+
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        #Main_div{
+            width: 100%;
+        }
+        nav{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: rgb(14, 14, 90); 
+            position: sticky;
+            z-index: +1;
+            top: 0;
+            border-radius: 10px;
+        }
+        #logo{
+            width: 70%;
+            display: flex;
+            place-items: center;
+        }
+        #logo img{
+            width: 70%;
+            border-radius: 10px;
+            margin-left: 100px;
+        }
+        #span{
+            font-size: 20px;
+            display: block;
+            text-align: end;
+            margin-top: 10px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+              
+        }
+        #link{
+            width: 100%;
+            margin: auto;
+            margin-left: 200px;
+            
+        }
+        #link ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            font-weight: bolder;
+            display: none;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        #img{
+            width: 100%;
+        }
+        #img img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        #form_table{
+            width: 100%;
+            display: block;
+        }
+        #form{
+            width: 100%;
+            /* border: 1px solid red; */
+            margin: auto;
+            /* text-align: center; */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(169, 189, 212);
+        }
+        #form input{
+            width: 99%;
+            height: 30px;
+            border-radius: 5px;
+            margin: 5px;
+            
+            
+        }
+        #form select{
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+        }
+        #form label{
+            font-weight: bolder;
+
+        }
+        button{
+            width: 15%;
+            height: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-left: 42%;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+            font-weight: bolder;
+            padding: 30px;
+        }
+        #table_div{
+            width: 100%;
+            /* text-align: center; */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(190, 214, 214);
+            margin-top: 10px;
+            
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            
+        
+        }
+        tr,td, th{
+           border: 1px solid black;
+           height: 40px;
+           text-align: center;
+           border-radius: 5px;
+        }
+        th{
+            background-color: rgb(151, 186, 226);
+        }
+        footer {
+            background-color: rgb(154, 154, 225);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            display: grid;
+    grid-template-columns: repeat(1,1fr);
+    border-radius: 5px;
+    margin-top: 5px;
+    
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        footer h2{
+            color: white;
+        }
+        footer li{
+            margin-bottom: 20px;
+            color: black;
+            font-size: 25px;
+        }
+        #d2 ul{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        #d3 ul{
+            display: flex;
+            justify-content: space-evenly;
+        } 
+        
+            #d4 ul{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+
+
+
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Main_div">
+        <nav>
+            <div id="logo">
+                <img src="https://og.refrens.com/img/641e8e41e2c9160011b6f10f/642a54452907310019b7f497/sitaram%20creation%20wallpaper.jpg?fq=eyJ3Ijo2MDAsImgiOjYwMCwiYnVja2V0IjoicmVmcmVucy5pbWFnZXMiLCJfX3YiOjIsImUiOiJqcGcifQ%3D%3D" alt="">
+            </div>
+            <div id="span">
+                <span>&#9776;</span>
+            </div>
+            <div id="link">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>More</li>
+                </ul>
+            </div>
+        </nav>
+        <div id="img">
+            <img src="https://www.wework.com/ideas/wp-content/uploads/sites/4/2017/06/Web_150DPI-20190927_10th_Floor_Conference_Room_2_v1-1120x630.jpg" alt="">
+        </div>
+       
+        <div id="form_table">
+            <div id="form">
+                <h2>Apply For Course</h2>
+            <form id="form">
+                <label>NAME:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" ><br><br>
+                <label>EMAIL:</label>
+                <input type="email" id="email" placeholder="Enter Your Email" ><br><br>
+                <label>COURSE:</label><br><br>
+                <select id="course">
+                    <option value="Select">Select</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JAVA">JAVA</option>
+                </select><br><br>
+                <button id="btn"> SUBMIT</button>
+            </form></div>
+        
+        <div id="table_div">
+            <h2>Course Details</h2>
+            <table>
+                <thead>
+                    <th>S.No.</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>COURSE</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        let arr=JSON.parse(localStorage.getItem("user"))||[];
+        let form=document.getElementById("form");
+        let btn=document.getElementById("btn");
+        btn.addEventListener("click", getdata)
+        function getdata(e){
+            e.preventDefault();
+            let obj={
+                name:document.getElementById("name").value,
+                email:document.getElementById("email").value,
+                course:document.getElementById("course").value,
+            }
+            arr.push(obj)
+            localStorage.setItem("user",JSON.stringify(arr));
+            situ(arr)
+            form.reset();
+        }
+        function situ(abc) {
+            tbody.innerText="";
+            abc.forEach((element,index)=> {
+                index++
+                let tbody=document.getElementById("tbody")
+                let tr=document.createElement("tr")
+                let td=document.createElement("td")
+                td.innerText=index
+                let td1=document.createElement("td")
+                td1.innerText=element.name
+                let td2=document.createElement("td")
+                td2.innerText=element.email
+                let td3=document.createElement("td")
+                td3.innerText=element.course
+                tr.append(td,td1,td2,td3)
+                tbody.append(tr)
+                
+            });
+            
+        }
+        situ(arr)
+        </script>
+
+<footer>
+    <div id="d1">
+        <h2>Contact Us</h2>
+        <ul>
+
+            <li>Phone- 01425-405060</li>
+            <li>Email- [info@xyz.com](mailto:info@xyz.com)</li>
+            <li>fax-012456987</li>
+        </ul>
+
+    </div>
+    <div id="d2">
+        <h2>Branches</h2>
+        <ul>
+            <li>Jaipur</li>
+            <li>Kota</li>
+            <li>Ajmer</li>
+        </ul>
+    </div>
+    <div id="d3">
+        <h2>Product And Services</h2>
+        <ul>
+            <li>Web Design</li>
+            <li>Web Devolopment</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </div>
+    <div id="d4">
+        <h2>Quick Links</h2>
+        <ul>
+            <li>Homepage</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    
+</footer>
+</body>
+</html>
